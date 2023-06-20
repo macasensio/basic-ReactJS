@@ -1,26 +1,35 @@
 .ShowHide{
     text-align: center;
-    margin: 50px 0;
 
     & button { 
+        cursor: pointer;
         transition: .40s ease all;
         border: none;
         outline: none;
         font-size: 18px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        color: white;
+        background-color: #242424;
 
         &:hover {
-            /* transform: scale(1.05); */
             color: #ffffff;
             background-color: var(--main-color);
         }
     }
     
-    & a {
-        color: #242424;
-    
-        &:hover {
+    & h2 {
+        margin-top: 10px;
+
+        & a {
+            color: #242424;
+            font-size: 18px;
             text-decoration: underline;
-            color: var(--main-color);
+
+            &:hover {
+                text-decoration: underline;
+                color: var(--main-color);
+            }
         }
     }
 }

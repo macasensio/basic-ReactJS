@@ -7,21 +7,23 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const autosList = autos.map(auto => {
-    const {model, velocidad, url} = auto
-    return <Card model={model} velocidad={velocidad} url={url} />
-  })
+    const autosList = autos.map(auto => {
+        const { model, velocidad, url } = auto
+        return <Card model={model} velocidad={velocidad} url={url} />
+    })
 
-  return (
-    <div className="App">
-      <Header />
-      <div className="container">
-        {autosList}
-      </div>
-      <ShowHide />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header />
+
+            <div className="container">
+                {autosList}
+            </div>
+            
+            <ShowHide />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

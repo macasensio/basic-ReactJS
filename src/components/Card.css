@@ -1,10 +1,10 @@
 .Card {
-    width: 300px;
+    width: 400px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px #b1171c;
     background-color: var(--main-color);
     color: white;
-    padding: 10px;
+    padding: 30px;
     text-align: center;
     border: 1px solid #961014;
     transition: .45s ease all;
@@ -12,7 +12,12 @@
     &:hover {
         transform: translateX(5px);
     }
-}
-.velocidad {
-    font-weight: bold;
+    
+    & h2 {
+        margin-bottom: 20px;
+    }
+
+    .velocidad {
+        font-weight: bold;
+    }
 }

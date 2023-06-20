@@ -1,17 +1,23 @@
 import React from 'react'
 import './AutoView.css'
 import VolverBtn from '../components/VolverBtn'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
-function AutoView({auto}) {
-    const {model, velocidad, image} = auto
+function AutoView({ auto }) {
+    const { model, image } = auto
     return (
-        <div className='AutoView'>
-            <h1>{model}</h1>
-            <p>De 0 - 100km/h en <span className='velocidad'>{velocidad}</span></p>
-            <img src={image} alt={model + " image"} />
+        <>
+            <Header />
 
-            <VolverBtn />
-        </div>
+            <div className='AutoView'>
+                <h1>{model}</h1>
+                <img src={image} alt={model + " image"} />
+                <VolverBtn />
+            </div>
+            
+            <Footer />
+        </>
     )
 }
 

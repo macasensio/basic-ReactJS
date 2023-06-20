@@ -1,16 +1,32 @@
 .VolverBtn {
-    margin: 50px 0;
-
+    text-align: center;
+    
     & button { 
+        cursor: pointer;
         transition: .40s ease all;
         border: none;
         outline: none;
         font-size: 18px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        color: white;
+        background-color: #242424;
 
         &:hover {
-            /* transform: scale(1.05); */
             color: #ffffff;
             background-color: var(--main-color);
+        }
+    }
+    
+    & h2 {
+        margin: 20px 0;
+        & a {
+            color: #242424;
+            font-size: 18px;
+            &:hover {
+                text-decoration: underline;
+                color: var(--main-color);
+            }
         }
     }
 }
