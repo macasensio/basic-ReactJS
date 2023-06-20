@@ -1,0 +1,16 @@
+.VolverBtn {
+    margin: 50px 0;
+
+    & button { 
+        transition: .40s ease all;
+        border: none;
+        outline: none;
+        font-size: 18px;
+
+        &:hover {
+            /* transform: scale(1.05); */
+            color: #ffffff;
+            background-color: var(--main-color);
+        }
+    }
+}
